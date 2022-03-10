@@ -51,3 +51,44 @@ body {
 .front-face {
     transform: rotateY(180deg);
 }
+
+#popup.hidden {
+    display: none;
+}
+
+#popup {
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 90vw;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 0;
+    margin-right: 0;
+    display: flex;
+    border-radius: 10px;
+}
+
+#popupImg {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #1c7ccc;
+    border-radius: 10px;
+}
+
+#closeButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+#text {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}

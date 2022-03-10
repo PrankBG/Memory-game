@@ -3,6 +3,8 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+const popup = document.getElementById('popup');
+const closeButton = document.getElementById('closeButton');
 
 function flipCard() {
     if (lockBoard) { return; }
@@ -28,6 +30,7 @@ function checkForMatch() {
     if(firstCard.dataset.framework === secondCard.dataset.framework) {
         //it's a match!!
         disableCards();
+        showPopup();
     }
     else {
         //not a match
@@ -63,5 +66,15 @@ function resetBoard() {
         card.style.order = Math.floor(Math.random()*12);
     });
 })();
+
+function showPopup() {
+    popup.classList.remove('hidden');
+}
+
+function hidePopup() {
+    popup.classList.add('hidden');
+}
+
+closeButton.addEventListener('click', hidePopup);
 
 cards.forEach(card => card.addEventListener('click', flipCard));
