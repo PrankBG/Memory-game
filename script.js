@@ -84,8 +84,6 @@ closeButton.addEventListener('click', hidePopup);
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function addInfoToCard(card) {
-    console.log(card);
-    console.log(places[card.dataset.framework][0]);
     card.getElementsByClassName('front-face')[0].src = places[card.dataset.framework][0];
 };
 
