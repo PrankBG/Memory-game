@@ -29,8 +29,9 @@ function checkForMatch() {
     //do card match?
     if(firstCard.dataset.framework === secondCard.dataset.framework) {
         //it's a match!!
-        disableCards();
+        console.log(firstCard.dataset);
         showPopup(firstCard.dataset.framework);
+        disableCards();
     }
     else {
         //not a match
@@ -82,12 +83,10 @@ closeButton.addEventListener('click', hidePopup);
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-(function addInfoToCard() {
-    console.log(places[0][0]);
-    console.log(cards[0].getElementsByClassName('front-face'));
-    cards[0].getElementsByClassName('front-face')[0].src = places[0][0];
-})();
+function addInfoToCard(card) {
+    console.log(card);
+    console.log(places[card.dataset.framework][0]);
+    card.getElementsByClassName('front-face')[0].src = places[card.dataset.framework][0];
+};
 
-cards.forEach(card => function() {
-
-} );
+cards.forEach(card => addInfoToCard(card) );
