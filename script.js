@@ -30,7 +30,7 @@ function checkForMatch() {
     if(firstCard.dataset.framework === secondCard.dataset.framework) {
         //it's a match!!
         disableCards();
-        showPopup();
+        showPopup(firstCard.dataset.framework);
     }
     else {
         //not a match
@@ -67,7 +67,10 @@ function resetBoard() {
     });
 })();
 
-function showPopup() {
+function showPopup(index) {
+    document.getElementById('popupImg').src = places[index][0];
+    document.getElementById('textH1').innerHTML = places[index][1];
+    document.getElementById('textP').innerHTML = places[index][2];
     popup.classList.remove('hidden');
 }
 
@@ -78,3 +81,13 @@ function hidePopup() {
 closeButton.addEventListener('click', hidePopup);
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+(function addInfoToCard() {
+    console.log(places[0][0]);
+    console.log(cards[0].getElementsByClassName('front-face'));
+    cards[0].getElementsByClassName('front-face')[0].src = places[0][0];
+})();
+
+cards.forEach(card => function() {
+
+} );

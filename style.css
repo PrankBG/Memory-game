@@ -73,8 +73,8 @@ body {
 }
 
 #popupImg {
-    height: 200px;
-    width: 200px;
+    height: 40vh;
+    width: 40vw;
     margin-top: 10px;
     margin-left: 10px;
     background-color: #1c7ccc;
@@ -91,4 +91,10 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 10px;
+    font-size: 3vh;
+}
+
+#textP {
+    overflow-y: scroll;
+    height: 80vh ;
 }

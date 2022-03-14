@@ -7,68 +7,70 @@
         <link rel="stylesheet" href="style.css">
         <title>Memory game</title>
 
+        <script src="information.js" defer></script>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
 
         <section class="memory-game">
             
-            <div class="memory-card" data-framework = 'aurelia'>
+            <div class="memory-card" data-framework = '0'>
+                <img class="front-face" id="frontFace" src="img/aurelia.svg" alt="Aurelia">
+                <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
+            </div>
+            
+            <div class="memory-card" data-framework = '0'>
                 <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'aurelia'>
-                <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
-                <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
-            </div>
-            
-            <div class="memory-card" data-framework = 'vue'>
+            <div class="memory-card" data-framework = '1'>
                 <img class="front-face" src="img/vue.svg" alt="Vue">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'vue'>
+            <div class="memory-card" data-framework = '1'>
                 <img class="front-face" src="img/vue.svg" alt="Vue">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'angular'>
+            <div class="memory-card" data-framework = '2'>
                 <img class="front-face" src="img/angular.svg" alt="Angular">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'angular'>
+            <div class="memory-card" data-framework = '2'>
                 <img class="front-face" src="img/angular.svg" alt="Angular">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'backbone'>
+            <div class="memory-card" data-framework = '3'>
                 <img class="front-face" src="img/backbone.svg" alt="Backbone">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'backbone'>
+            <div class="memory-card" data-framework = '3'>
                 <img class="front-face" src="img/backbone.svg" alt="Backbone">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'ember'>
+            <div class="memory-card" data-framework = '4'>
                 <img class="front-face" src="img/ember.svg" alt="Ember">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'ember'>
+            <div class="memory-card" data-framework = '4'>
                 <img class="front-face" src="img/ember.svg" alt="Ember">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'react'>
+            <div class="memory-card" data-framework = '5'>
                 <img class="front-face" src="img/react.svg" alt="React">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
             
-            <div class="memory-card" data-framework = 'react'>
+            <div class="memory-card" data-framework = '5'>
                 <img class="front-face" src="img/react.svg" alt="React">
                 <img class="back-face" src="img/js-badge.svg" alt="JS Badge">
             </div>
@@ -76,16 +78,16 @@
         </section>
 
         <div id="popup" class="hidden">
-            <img id="popupImg" src="img/aurelia.svg">
+            <img id="popupImg" src="">
             <div id="text">
-                <h1>Aurelia</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, officiis maiores? Architecto doloremque molestiae nesciunt laudantium perspiciatis recusandae exercitationem sequi omnis natus nostrum. Ipsum fuga rerum nihil obcaecati magnam numquam?</p>
+                <h1 id="textH1"></h1>
+                <p id="textP"></p>
             </div>
             <img id="closeButton" src="img/closeButton.png" alt="">
         </div>
 
 
-        <script src="script.js"></script>
+        
     </body>
 
 </html>
