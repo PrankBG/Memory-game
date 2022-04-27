@@ -1,0 +1,1 @@
+closeButton.addEventListener('click', hidePopup);
