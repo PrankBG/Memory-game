@@ -94,7 +94,7 @@ function hidePopup() {
 }
 
 function addInfoToCard(card) {
-    //puts the photos into the cars
+    //puts the photos into the cards
     card.getElementsByClassName('front-face')[0].src = info[card.dataset.framework][0];
 };
 
@@ -115,6 +115,6 @@ function chooseCategory(category) {
 
 
 
-cards.forEach(card => addInfoToCard(card)); 
+cards.forEach(card => addInfoToCard(card)); //for every card call the function to put photon in to the card
 cards.forEach(card => card.addEventListener('click', flipCard));//makes all cards clickable
-closeButton.addEventListener('click', hidePopup);
+closeButton.addEventListener('click', hidePopup); //makes the close button clickable, and when click call the function hidePopup
