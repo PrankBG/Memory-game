@@ -81,7 +81,7 @@ function resetBoard() {
 })();
 
 function showPopup(index) {
-    //shows the popup window and fill the information about there photo on the flipped cards
+    //shows the popup window and fill the information about the photo on the flipped cards
     document.getElementById('popupImg').src = info[index][0];
     document.getElementById('textH1').innerHTML = info[index][1];
     document.getElementById('textP').innerHTML = info[index][2];
