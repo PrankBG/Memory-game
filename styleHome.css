@@ -1,13 +1,13 @@
 body {
     background-color: #060AB2;
-    height: 100vh;
     text-align: center;
     align-items: center;
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #title {
-    font-size: 10vh;
+    font-size: 12vh;
 }
 
 #categories {
