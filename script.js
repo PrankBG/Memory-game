@@ -117,3 +117,4 @@ function chooseCategory(category) {
 
 cards.forEach(card => addInfoToCard(card)); 
 cards.forEach(card => card.addEventListener('click', flipCard));//makes all cards clickable
+closeButton.addEventListener('click', hidePopup);
