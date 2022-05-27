@@ -56,7 +56,7 @@ function disableCards() {
 }
 
 function unflipCards() {
-    lockBoard = true;
+    lockBoard = true;//makes the other cards unclickable before the previous two are turned back around
 
     //if the flipped card doen not match waits a little bit and turns them back
     setTimeout(() => {
@@ -85,7 +85,9 @@ function showPopup(index) {
     document.getElementById('popupImg').src = info[index][0];
     document.getElementById('textH1').innerHTML = info[index][1];
     document.getElementById('textP').innerHTML = info[index][2];
-    popup.classList.remove('hidden');
+    setTimeout( () => {
+        popup.classList.remove('hidden');
+    }, 700);
 }
 
 function hidePopup() {

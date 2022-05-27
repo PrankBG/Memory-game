@@ -18,7 +18,7 @@ body {
 
 .category {
     height: 25vh;
-    width: 80vh;
+    width: 37.5vw;
     background-color: #1c7ccc;
     border-radius: 15px;
     display: flex;
@@ -27,6 +27,6 @@ body {
 }
 
 .categoryTitle {
-    font-size: 8vh;
+    font-size: 4vw;
 }
 
